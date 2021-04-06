@@ -61,6 +61,23 @@ header li a {
   color: black;
 }
 
+.toggle-button {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40px;
+  height: 30px;
+}
+
+.toggle-button .bar {
+  display: block;
+  height: 4px;
+  margin-top: 7px;
+  width:100%;
+  background-color: rgb(225, 188, 65);
+  -webkit-text-stroke: 0.5px white;
+  border-radius: 10px;
+}
 
 /* Hero */
 
@@ -329,6 +346,14 @@ footer a {
 
   @media only screen and (max-width: 901px) {
 
+    header img {
+      max-height: 75px;
+    }
+
+    header li {
+      margin-right: 20px;
+    }
+
     .hero {
       background-position: center;
       max-height: 25vh;
@@ -383,6 +408,27 @@ footer a {
   }
 
   @media only screen and (max-width: 601px) {
+
+    header {
+      display: flex;
+      
+    }
+
+    .toggle-button {
+      display: flex;
+      position: absolute;
+      align-self: center;
+      right: 50px;
+      
+    }
+
+    header ul {
+      display: none;
+    }
+
+    .sign-up {
+      display: none;
+    }
 
     .info h2 {
       font-size: 2rem;
