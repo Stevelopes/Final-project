@@ -350,6 +350,10 @@ footer a {
       max-height: 75px;
     }
 
+    header ul {
+      padding: 0;
+    }
+
     header li {
       margin-right: 20px;
     }
@@ -412,6 +416,11 @@ footer a {
     header {
       display: flex;
       
+    }
+
+    header img {
+      max-height: 100px;
+      margin-left: 50px;
     }
 
     .toggle-button {
