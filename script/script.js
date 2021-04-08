@@ -1,3 +1,5 @@
+// Api
+
 window.addEventListener('DOMContentLoaded', getLeagueData);
 
 async function getLeagueData() {
@@ -54,3 +56,19 @@ function openAccordion(event) {
   }
   return target.setAttribute('aria-expanded', false);
 }
+
+// hamburger
+
+const navSlide = () => {
+  const burger = document.querySelector('.toggle-button');
+  const nav =document.querySelector('.nav-links');
+
+  
+  burger.addEventListener('click',() => {
+  
+    // Toggle burger  
+  nav.classList.toggle('nav-active');
+  });
+}
+
+navSlide();
