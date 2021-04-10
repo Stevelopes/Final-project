@@ -69,7 +69,7 @@ header img {
   flex-direction: column;
   justify-content: space-between;
   width: 40px;
-  height: 30px;
+  height: 40px;
   padding: 0;
   cursor: pointer;
 }
@@ -536,7 +536,7 @@ footer a {
       border-radius: 5px;
       display: flex;
       align-items: center;
-      width: 50%;
+      width: 30%;
       transform: translateX(100%);
       transition: transform 0.5s ease-in;
     }
@@ -547,10 +547,12 @@ footer a {
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      margin: 0;
     }
 
     .nav-links li {
       padding: 20px;
+      margin: 0 auto;
     }
 
     header img {
@@ -584,7 +586,8 @@ footer a {
     }
 
     .sign-up {
-      display: none;
+      display: block;
+      margin: 0 auto;
     }
 
     .info h2 {
