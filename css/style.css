@@ -19,6 +19,14 @@ body {
   overflow: auto;
 }
 
+a:hover{
+  color: red;
+}
+
+ul li a:hover{
+  color: red;
+}
+
 :root {
   --yellow: rgb(225, 188, 65);
   --bg-color: rgb(31, 31, 31);
@@ -27,6 +35,8 @@ body {
 
 
 /* Header */
+
+
 
 header {
   display: flex;
@@ -41,19 +51,22 @@ header img {
   margin-left: 75px;
 }
 
-.nav-links ul {
+.nav-links {
   display: flex;
   list-style: none;
   align-items: center;
+  justify-content: space-between;
+  padding: 0;
 }
 
 .nav-links li {
-  margin-right: 100px;
+  padding-right: 50px;
 }
 
-.nav-links li a {
-  color: aqua;
-  font-size: 1.25rem;
+.nav li a {
+  color: var(--yellow);
+  -webkit-text-stroke: 0.5px white;
+  font-size: 2.25rem;
   text-decoration: none;
 }
 
@@ -91,7 +104,10 @@ header img {
   border-radius: 10px;
 }
 
+
 /* Hero */
+
+
 
 .hero {
   display: flex;
@@ -121,12 +137,18 @@ header img {
 
 .hero-link a {
   text-decoration: none;
-  color: aqua;
+  color: var(--yellow);
   padding-top: 30px;
   font-size: 1.2rem;
 }
 
+.hero-link a:hover {
+  color: red;
+}
+
+
 /* Main */
+
 
 .flex-container {
   display: flex;
@@ -197,7 +219,11 @@ header img {
   transform: scale(1.1);
 }
 
+
+
 /* Info */
+
+
 
 .flex-container-2 {
   display: flex;
@@ -240,14 +266,24 @@ header img {
   padding: 0px 30px
 }
 
-/* Patch list */
 
-.patch {
+
+/* role list */
+
+
+
+.roles {
   background-color: var(--bg-color);
   text-align: center;
 }
 
-.patch h2 {
+.roles h2 {
+  font-size: 3rem;
+  color: var(--yellow);
+  -webkit-text-stroke: 0.5px white;
+}
+
+.roles h3 {
   font-size: 2rem;
   color: var(--yellow);
   -webkit-text-stroke: 0.5px white;
@@ -261,8 +297,8 @@ dl {
 
 dt {
   align-content: center;
-  border: 1px solid grey;
-  background-color: rgb(151, 151, 151);
+  border: 1px solid var(--yellow);
+  background-color: var(--bg-color);
   border-bottom: none;
   display: flex;
   justify-content: space-between;
@@ -271,7 +307,7 @@ dt {
 }
 
 dt:last-of-type {
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid var(--yellow);
 }
 
 button {
@@ -282,19 +318,19 @@ button {
   background-color: var(--bg-color);
 }
 
-.patch span {
+.roles span {
   border: var(--border);
   display: block;
   width: 1.5rem;
   transition: all linear 0.1s;
 }
 
-.patch span:first-of-type {
+.roles span:first-of-type {
   transform-origin: 100%;
   transform: rotate(45deg) translate3d(1px, 16px, 0);
 }
 
-.patch span:last-of-type {
+.roles span:last-of-type {
   transform-origin: 0;
   transform: rotate(-45deg) translate3d(2px, 16px, 0);
 }
@@ -305,14 +341,14 @@ dd {
   overflow: hidden;
 }
 
-.patch p {
+.roles p {
   margin: 0;
   font-size: 1.2rem;
   color: silver;
 }
 
 dt.accordion-open {
-  background-color: rgb(151, 151, 151);
+  background-color: var(--bg-color);
   color: white;
 }
 
@@ -351,7 +387,10 @@ dt.accordion-open span:last-of-type {
   transform: rotate(-45deg) translate3d(0px, -1px, 0);
 }
 
+
 /* Footer */
+
+
 
 footer {
   background-color: var(--bg-color);
@@ -376,6 +415,12 @@ footer a {
   margin-bottom: 10px;
   color: white;
 }
+
+
+
+/* Form */
+
+
 
 
 .form-container {
@@ -405,12 +450,19 @@ footer a {
   margin-bottom: 10px;
 }
 
+
+/* Community */
+
+
 .community {
   background-image: url(../images/community-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
-  min-height: 1500px;
+  min-height: 1100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .community-flex-container {
@@ -420,7 +472,8 @@ footer a {
   height: 250px;
   width: 200px;
   background-color:  rgb(31, 31, 31, 0.7);
-  border: 1px solid aqua;
+  border: 1px solid var(--yellow);
+  margin: 40px;
   }
 
   .community-flex-container h3 {
@@ -444,12 +497,12 @@ footer a {
       margin-left: 30px;
     }
 
-    .nav-links li {
-      margin-right: 30px;
+    .nav li {
+      padding-right: 30px;
     }
     
-    .nav-links li a {
-      font-size: 1rem;
+    .nav li a {
+      font-size: 1.75rem;
     }
 
     .sign-up {
@@ -466,12 +519,12 @@ footer a {
       max-height: 75px;
     }
 
-    .nav-links ul {
+    .nav-links {
       padding: 0;
     }
 
     .nav-links li {
-      margin-right: 20px;
+      padding-right: 20px;
     }
 
     .hero {
@@ -533,7 +586,7 @@ footer a {
       overflow-x: hidden;
     }
 
-    .nav-links {
+    .nav {
       position: absolute;
       z-index: 5;
       right: 0px;
@@ -548,7 +601,7 @@ footer a {
       transition: transform 0.5s ease-in;
     }
 
-    .nav-links ul {
+    .nav-links {
       width: 100%;
       height: 100%;
       flex-direction: column;
@@ -560,6 +613,7 @@ footer a {
     .nav-links li {
       padding: 20px;
       margin: 0 auto;
+      font-size: 1.5rem;
     }
 
     header img {

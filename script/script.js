@@ -1,4 +1,7 @@
-// Api
+// Api  
+
+  const template = document.querySelector('template');
+  const leagueWrapper = document.querySelector('.fixture');
 
 window.addEventListener('DOMContentLoaded', getLeagueData);
 
@@ -10,8 +13,38 @@ async function getLeagueData() {
     });
     const league = await response.json();
     console.log(league);
+    const team1 = league.data.schedule.events[79].match.teams[0].name;
+    const team2 = league.data.schedule.events[79].match.teams[1].name;
+
+    console.log(team2)
+    console.log(team1)
+ }
     
-  }
+    
+
+    function renderMatch() {
+      
+      const team1Name = document.querySelector('.team-1');
+
+      team1Name.append(team1)
+
+    }
+
+    renderMatch()
+  
+  // function renderMatch(league) {
+  //   const clone = template.content.cloneNode(true);
+
+  //   const team1Name = clone.querySelector('.team-1');
+  //   team1Name.innerText = team1.name;
+
+  //   leagueWrapper.append(clone);
+  // }
+
+
+
+
+
 
 
   // Accordian
@@ -61,14 +94,31 @@ function openAccordion(event) {
 
 const navSlide = () => {
   const burger = document.querySelector('.toggle-button');
-  const nav =document.querySelector('.nav-links');
-
+  const nav =document.querySelector('.nav');
   
   burger.addEventListener('click',() => {
-  
+
     // Toggle burger  
   nav.classList.toggle('nav-active');
-  });
+
+
+   });
 }
 
 navSlide();
+
+// moveLink
+
+const signUp = document.querySelector('.sign-up');
+const mediaQuery = window.matchMedia('(max-width: 751px)');
+const nav =document.querySelector('.nav-links');
+
+function moveLink () {
+  if (mediaQuery.matches) {
+     nav.appendChild(signUp);
+  };
+}
+
+
+mediaQuery.addListener(moveLink);
+moveLink(mediaQuery);
