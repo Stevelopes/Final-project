@@ -15,8 +15,14 @@ img {
 }
 
 body {
-  background-color: rgb(31, 31, 31);
+  background-color: var(--bg-color);
   overflow: auto;
+}
+
+:root {
+  --yellow: rgb(225, 188, 65);
+  --bg-color: rgb(31, 31, 31);
+  --border: 1px solid var(--yellow);
 }
 
 
@@ -25,7 +31,7 @@ body {
 header {
   display: flex;
   height: 10vh;
-  background-color: rgb(31, 31, 31);
+  background-color: var(--bg-color);
   align-items: center;
   justify-content: space-between;
 }
@@ -38,6 +44,7 @@ header img {
 .nav-links ul {
   display: flex;
   list-style: none;
+  align-items: center;
 }
 
 .nav-links li {
@@ -54,7 +61,7 @@ header img {
   display: flex;
   padding: 10px;
   margin-right: 20px;
-  background-color: rgb(225, 188, 65);
+  background-color: var(--yellow);
   border-radius: 5px;
   height: 50px;
   align-items: center;
@@ -79,7 +86,7 @@ header img {
   height: 4px;
   margin-top: 7px;
   width:100%;
-  background-color: rgb(225, 188, 65);
+  background-color: var(--yellow);
   -webkit-text-stroke: 0.5px white;
   border-radius: 10px;
 }
@@ -100,7 +107,7 @@ header img {
   margin: auto;
   font-weight: lighter;
   font-size: 4rem;
-  color: rgb(245, 207, 111);
+  color: var(--yellow);
   -webkit-text-stroke: 0.5px white;
   }
 
@@ -128,8 +135,8 @@ header img {
 .flex-item-1 {
   height: 30vh;
   width: 35vw;
-  background-color: rgb(31, 31, 31);
-  border: 1px solid aqua;
+  background-color: var(--bg-color);
+  border: var(--border);
   transition: 0.5s ease-in-out;
 }
 
@@ -140,7 +147,7 @@ header img {
 .youtube-video {
   height: 30vh;
   width: 35vw;
-  border: 2px solid aqua;
+  border: var(--border);
   transition: 0.5s ease-in-out;
 }
 
@@ -162,11 +169,11 @@ header img {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  border: 2px solid aqua;
+  border: var(--border);
 }
 
 .flex-item-3 h2 {
-  color: rgb(255, 207, 86);
+  color: var(--yellow);
   -webkit-text-stroke: 0.5px rgb(0, 0, 0);
   font-size: 2rem;
   margin-bottom: 0;
@@ -174,7 +181,7 @@ header img {
 }
 
 .flex-item-3 p {
-  color: rgb(255, 207, 86);
+  color: var(--yellow);
   -webkit-text-stroke: 0.5px white;
   font-size: 1.5rem;
   margin-top: 15px;
@@ -198,19 +205,19 @@ header img {
 }
 
 .info {
-  background-color: rgb(31, 31, 31);
+  background-color: var(--bg-color);
   display: flex;
   flex-direction: column;
   min-height: 30vh;
   text-align: center;
-  border: 2px solid aqua;
+  border: var(--border);
   padding: 0px 100px;
 }
 
 .info h2 {
   font-weight: lighter;
   font-size: 3rem;
-  color: rgb(255, 207, 86);
+  color: var(--yellow);
   -webkit-text-stroke: 0.5px white;
 }
 
@@ -236,13 +243,13 @@ header img {
 /* Patch list */
 
 .patch {
-  background-color: rgb(31, 31, 31);
+  background-color: var(--bg-color);
   text-align: center;
 }
 
 .patch h2 {
   font-size: 2rem;
-  color: rgb(255, 207, 86);
+  color: var(--yellow);
   -webkit-text-stroke: 0.5px white;
 }
 
@@ -272,11 +279,11 @@ button {
   display: block;
   padding: 1em;
   outline: none;
-  background-color: rgb(31, 31, 31);
+  background-color: var(--bg-color);
 }
 
 .patch span {
-  border: 1px solid aqua;
+  border: var(--border);
   display: block;
   width: 1.5rem;
   transition: all linear 0.1s;
@@ -310,7 +317,7 @@ dt.accordion-open {
 }
 
 dt.accordion-open button {
-  background-color: black;
+  background-color: var(--bg-color);
 }
 
 dt.accordion-open span {
@@ -347,11 +354,11 @@ dt.accordion-open span:last-of-type {
 /* Footer */
 
 footer {
-  background-color: rgb(31, 31, 31);
+  background-color: var(--bg-color);
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top: 2px solid aqua;
+  border-top: var(--border);
   text-align: center;
 }
 
@@ -375,7 +382,7 @@ footer a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: rgb(255, 207, 86);
+  color: var(--yellow);
   padding-top: 150px;
 }
 
@@ -417,14 +424,14 @@ footer a {
   }
 
   .community-flex-container h3 {
-    color: rgb(255, 207, 86);
+    color: var(--yellow);
     -webkit-text-stroke: 0.5px black;
     font-size: 2.5rem;
     margin-top: 20px;
   }
 
   .community-flex-container a {
-    color: rgb(255, 207, 86);
+    color: var(--yellow);
     -webkit-text-stroke: 0.5px white;
     font-size: 1.2rem;
     padding-bottom: 10px;
@@ -530,7 +537,7 @@ footer a {
       position: absolute;
       z-index: 5;
       right: 0px;
-      height: 20vh;
+      height: fit-content;
       top: 10vh;
       background-color: rgb(31, 31, 31, .95);
       border-radius: 5px;
