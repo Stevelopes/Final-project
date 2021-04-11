@@ -9,45 +9,64 @@
     <title>Contact-us</title>
 </head>
 <body>
-    <header class="wrapper">
-        <div>
-         <picture>
-            <img src="./images/lol-logo-rendered-hi-res.png" alt="League-of-legends-logo">
-         </picture>
-        </div>
-        <div>
-         <nav>
-          <ul>
-            <li><a href="./index.html">Overview</a></li>
-            <li><a href="http://">How to play</a></li>
-            <li><a href="https://www.riotgames.com/en">Riot Games</a></li>
-          </ul>
-         </nav>
-        </div>
-        <div>
-         <a class="sign-up" href="https://signup.euw.leagueoflegends.com/en/signup/index#/" alt="Sign-up-link">Sign up and play</a>
-        </div>
-    </header>
+   <header class="wrapper">
+      <div>
+       <picture>
+          <img src="./images/lol-logo-rendered-hi-res.png" alt="League-of-legends-logo">
+       </picture>
+      </div>
+      <button class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <div>
+       <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="./index.html">Overview</a></li>
+          <li><a href="http://">How to play</a></li>
+          <li><a href="https://www.riotgames.com/en">Riot Games</a></li>
+          
+        </ul>
+       </nav>
+      </div>
+      <div class="sign-up-div">
+            <a class="sign-up" href="https://signup.euw.leagueoflegends.com/en/signup/index#/" 
+               alt="Sign-up-link">Sign up and play</a>
+       </div>
+      
+  </header>
     <main class="form wrapper">
-     <div class="form-container">
+     <div >
       <h1> Get in contact with us</h1>
-      <form action="" method="GET" id="contact-form"></form>
-       <div class="form-name">
+      <form class="form-container" action="" method="GET" id="contact-form">
+       <div class="form-item">
           <label for="name">Enter your name</label>
           <input type="text" name="name" id="name" required />
        </div>
-       <div class="form-email">
+       <div class="form-item">
           <label for="email">Enter your email</label>
           <input type="text" name="email" id="email" required />
        </div>
-       <div class="form-message">
+       <div class="form-item">
           <label for="message">Enter your message</label>
           <textarea name="message" id="message" cols="30" rows="5" required></textarea>
        </div>
        <div class="form-submit">
           <input type="submit" name="submit" id="submit" value="Submit">
        </div>
+      </form>
      </div>
     </main>
+    <footer class="wrapper">
+      <picture>
+          <img src="./images/Riot-logo.png" alt="Riot-logo">
+      </picture>
+      <p> © 2019 Riot Games, Inc. All rights reserved. Riot Games, League of Legends 
+        and PvP.net are trademarks, services marks, or registered trademarks of Riot Games, Inc.
+      </p>
+      <a href="./contact-us.html">Contact Us</a>
+  </footer>
+  <script src="./script/script.js"></script>
 </body>
 </html>

@@ -154,7 +154,7 @@ header img {
   display: flex;
 }
 
-.flex-item-1 {
+.fixture {
   height: 30vh;
   width: 35vw;
   background-color: var(--bg-color);
@@ -420,15 +420,20 @@ footer a {
 
 /* Form */
 
-
+.form div {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
 
 
 .form-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
   color: var(--yellow);
-  padding-top: 150px;
+  text-align: center;
 }
 
 .form {
@@ -436,18 +441,55 @@ footer a {
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.form-container h1 {
-  -webkit-text-stroke: 0.5px white;
+.form h1 {
+  -webkit-text-stroke: 0.5px black;
   font-size: 3rem;
+  margin-top: 0;
+  color: var(--yellow);
+  text-align: center;
 }
 
-.form-name {
-  margin-bottom: 10px;
+.form-item {
+  display: contents;
+  font-size: 1.5rem;
 }
-.form-email {
-  margin-bottom: 10px;
+
+.form-item input {
+  margin-bottom: 20px;
+  border-radius:15px;
+  border: 0;
+  padding: 10px;
+}
+
+.form-item label {
+  background-color: rgba(31, 31, 31, 0.75);
+  border-radius:15px;
+  border: 0;
+}
+
+.form-submit {
+  background-color: rgba(31, 31, 31, 0.75);
+}
+
+.form-submit input {
+  border-radius: 15px;
+  border: var(--border);
+  background-color: rgba(31, 31, 31, 0.75);
+  color: var(--yellow);
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+
+.form-container textarea {
+  resize: vertical;
+  padding:10px;
+  border-radius:15px;
+  border: 0;
 }
 
 
@@ -463,6 +505,11 @@ footer a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.community div {
+  display: flex;
+  flex-direction: column;
 }
 
 .community-flex-container {
@@ -606,6 +653,7 @@ footer a {
       align-items: center;
       justify-content: center;
       margin: 0;
+      padding-bottom: 15px;
     }
 
     .nav-links li {
@@ -634,19 +682,6 @@ footer a {
       transform: translateX(0%);
     }
 
-    @keyframes navLinkFade {
-
-      from {
-        opacity: 0;
-        transform: translateX(50px);
-      }
-      to {
-        opacity: 1;
-        transform: translateX(0px);
-      }
-      
-    }
-
     .sign-up {
       display: block;
       margin: 0 auto;
@@ -668,7 +703,17 @@ footer a {
       max-height: 60px;
       margin-top: 20px;
     }
-   
 
+    .community {
+      flex-direction: column;
+    }
+
+    .community-flex-container {
+      margin: 20px;
+      }
+   
+    .form h1 {
+      font-size: 2rem;
+      }
 
   }
