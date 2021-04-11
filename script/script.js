@@ -22,15 +22,15 @@ async function getLeagueData() {
     
     
 
-    function renderMatch() {
+    // function renderMatch() {
       
-      const team1Name = document.querySelector('.team-1');
+    //   const team1Name = document.querySelector('.team-1');
 
-      team1Name.append(team1)
+    //   team1Name.append(team1)
 
-    }
+    // }
 
-    renderMatch()
+    // renderMatch()
   
   // function renderMatch(league) {
   //   const clone = template.content.cloneNode(true);
