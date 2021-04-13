@@ -17,6 +17,7 @@ img {
 body {
   background-color: var(--bg-color);
   overflow: auto;
+  font-family: 'Fira Sans', sans-serif;
 }
 
 a:hover{
@@ -49,6 +50,17 @@ header {
 header img {
   max-height: 150px;
   margin-left: 75px;
+}
+
+.links {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: contents;
 }
 
 .nav-links {
@@ -132,7 +144,7 @@ header img {
   flex-direction: column;
   position: absolute;
   top: 25%;
-  left: 15%;
+  left: 10%;
 }
 
 .hero-link a {
@@ -228,32 +240,59 @@ header img {
   align-items: center;
   text-align: center;
   color: var(--yellow);
-  -webkit-text-stroke: 0.5px white;
-}
+ }
 
 .champion-info h2 {
   font-size: 3rem;
   margin: 75px;
+  -webkit-text-stroke: 0.5px white;
 }
 
 .champion-info p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin: 50px;
+  max-width: 1500px;
 }
 
 .champion h3 {
   font-size: 2rem;
+  -webkit-text-stroke: 0.5px white;
+  margin: 0;
+  padding-bottom: 20px;
 }
 
 .champion {
   border: var(--border);
+  border-radius: 15px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  max-width: 2000px;
-}
+  max-width: 1250px;
+  margin-bottom: 10px;
+  }
 
+.champion-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
+.runners-up {
+    max-width: 500px;
+    border-left: var(--border);
+  }
+
+.champion h3 {
+    margin: 30px;
+  }
+
+.champion p {
+    margin: 20px;
+  }
+
+.champion img {
+    max-height: 400px;
+  }
 
 /* Info */
 
@@ -571,7 +610,7 @@ footer a {
     padding-bottom: 10px;
   }
 
-  @media only screen and (max-width: 1099px) {
+  @media only screen and (max-width: 1290px) {
 
     header img {
       max-height: 100px;
@@ -594,7 +633,7 @@ footer a {
      
   }
 
-  @media only screen and (max-width: 901px) {
+  @media only screen and (max-width: 1100px) {
 
     header img {
       max-height: 75px;
@@ -604,8 +643,16 @@ footer a {
       padding: 0;
     }
 
+    .links {
+      width: 70%;
+    }
+
     .nav-links li {
       padding-right: 20px;
+    }
+
+    .nav-links li a {
+      font-size: 1.4rem;
     }
 
     .hero {
@@ -642,6 +689,10 @@ footer a {
       align-items: center;
     }
 
+    .runners-up {
+      max-width: 350px;
+    }
+
     .info {
       min-height: 30vh;
       margin: 0;
@@ -659,7 +710,7 @@ footer a {
     }
   }
 
-  @media only screen and (max-width: 750px) {
+  @media only screen and (max-width: 850px) {
 
     body {
       overflow-x: hidden;
@@ -678,6 +729,7 @@ footer a {
       width: 30%;
       transform: translateX(100%);
       transition: transform 0.5s ease-in;
+      flex-direction: column;
     }
 
     .nav-links {
@@ -735,6 +787,14 @@ footer a {
       font-size: 1.5rem;
       margin: 10px;
     }
+
+    .champion {
+      flex-direction: column;
+      }
+
+    .runners-up {
+      border-left: none;
+      }
 
     .champion p {
       margin: 10px;

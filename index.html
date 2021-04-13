@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,
+wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>League-of-legends</title>
@@ -20,7 +23,7 @@
           <span class="bar"></span>
           <span class="bar"></span>
         </button>
-        <div>
+        <div class="links">
          <nav class="nav">
           <ul class="nav-links">
             <li><a href="./index.html">Overview</a></li>
@@ -28,12 +31,13 @@
             <li><a href="https://www.riotgames.com/en">Riot Games</a></li>
             
           </ul>
-         </nav>
-        </div>
-        <div class="sign-up-div">
+          <div class="sign-up-div">
               <a class="sign-up" href="https://signup.euw.leagueoflegends.com/en/signup/index#/" 
                  alt="Sign-up-link">Sign up and play</a>
          </div>
+         </nav>
+        </div>
+        
         
     </header>
     <div class="hero wrapper">
@@ -44,7 +48,7 @@
     </div>
     <div class="flex-container wrapper">
         <div class="fixture">
-          <!-- <template>
+          <template>
             <div> 
               <h2 class="team-1"></h2>
               <img class="team-logo-1" src="" alt="">
@@ -55,7 +59,7 @@
               <img class="team-logo-2" src="" alt="">
               <p class="score-2"></p>
             </div>
-          </template> -->
+          </template>
         </div>
         <div class="youtube-video">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/vzHrjOMfHPY" 
@@ -74,83 +78,103 @@
       <h2>Who Were the Most Picked Champions of the LEC 2021 Spring Season?</h2>
       <p>With the Spring Season officially at an end, we're taking a look at the most popular champions played this season.</p>
       <div class="champion">
-        <p>Top Lane</p>
-        <h3>Gnar – 37 picks</h3>
-        <picture>
-          <img src="./images/Gnar.jpg" alt="League-of-legends-champion 'Gnar'">
-        </picture>
-        <p>This cuddly creature's manoeuvrability and high damage potential made him the most popular top lane choice this season.</p>
+        <div class="champion-profile">
+          <p>Top Lane</p>
+          <h3>Gnar – 37 picks</h3>
+          <picture>
+            <img src="./images/Gnar.jpg" alt="League-of-legends-champion 'Gnar'">
+          </picture>
+          <p>This cuddly creature's manoeuvrability and high damage potential made him the most popular top lane choice this season.</p>
+        </div>
+        <div class="runners-up">
         <h3>Renekton – 32 picks</h3>
         <p>This fighting crocodile remains a firm favourite both in and out of pro play thanks to his high base damage and crowd-control 
           ability, which make him one of the most useful champions in the early game.</p>
         <h3>Gragas – 27 picks</h3>
         <p>The bearded rabble-rouser enjoyed a surge in popularity amongst pros this season due to his ability to soak up as much damage 
           as he puts out.</p>
+        </div>
       </div>
 
       
       <div class="champion">
-        <p>Jungle</p>
-        <h3>Lillia – 45 picks</h3>
-        <picture>
-          <img src="./images/lillia.jpg" alt="League-of-legends-champion 'Lillia'">
-        </picture>
-        <p>This speedy fawn was by far the most popular Jungle pick this season, due in large part to her unmatched movement speed, which 
-          allows her to duck and weave out of the way of projectiles while she keeps her distance from melee champs.</p>
-        <h3>Udyr – 41 picks</h3>
-        <p>The Spirit Walker made a heck of a comeback in Spring, having not made a single LEC appearance throughout 2020. This champion 
-          is one of the fastest at clearing the jungle camps, in a meta where the jungler controls the game, it’s very good that they do 
-          that with alot of gold.</p>
-        <h3>Hecarim – 39 picks</h3>
-        <p>This ghostly centaur also boasts high movement speed and decent damage output, which made him another popular choice for pros.</p>
+        <div class="champion-profile">
+           <p>Jungle</p>
+           <h3>Lillia – 45 picks</h3>
+           <picture>
+             <img src="./images/lillia.jpg" alt="League-of-legends-champion 'Lillia'">
+           </picture>
+           <p>This speedy fawn was by far the most popular Jungle pick this season, due in large part to her unmatched movement speed, which 
+             allows her to duck and weave out of the way of projectiles while she keeps her distance from melee champs.</p>
+        </div>
+        <div class="runners-up">
+           <h3>Udyr – 41 picks</h3>
+           <p>The Spirit Walker made a heck of a comeback in Spring, having not made a single LEC appearance throughout 2020. This champion 
+             is one of the fastest at clearing the jungle camps, in a meta where the jungler controls the game, it’s very good that they do 
+             that with alot of gold.</p>
+           <h3>Hecarim – 39 picks</h3>
+           <p>This ghostly centaur also boasts high movement speed and decent damage output, which made him another popular choice for pros.</p>
+        </div>
       </div>
 
 
       <div class="champion">
-        <p>Mid Lane</p>
-        <h3>Orianna – 45 picks</h3>
-        <picture>
-          <img src="./images/Orianna.jpg" alt="League-of-legends-champion 'Orianna'">
-        </picture>
-        <p>As one of the most infamous solo-carry mid lane champions, it's not surprising that Orianna was once again one of the top picks
+        <div class="champion-profile">
+           <p>Mid Lane</p>
+           <h3>Orianna – 45 picks</h3>
+           <picture>
+             <img src="./images/Orianna.jpg" alt="League-of-legends-champion 'Orianna'">
+           </picture>
+           <p>As one of the most infamous solo-carry mid lane champions, it's not surprising that Orianna was once again one of the top picks
            in the LEC this season. Very good at controlling fights.</p>
-        <h3>Azir – 34 picks</h3>
-        <p>As one of the most unpredictable champions in League of Legends, it makes sense that this notoriously difficult champion should
-           rise to the top of professional play. The Emperor of the Sands' popularity most likely stems from the fact that he is a good 
-           counter for both Syndra and Orianna, the other most popular mid lane champs of the season.</p>
-        <h3>Syndra – 25 picks</h3>
-        <p>Syndra's popularity dropped slightly in 2021, but that didn't stop her from stunning entire teams and massive burst</p>
+        </div>
+        <div class="runners-up">
+           <h3>Azir – 34 picks</h3>
+           <p>As one of the most unpredictable champions in League of Legends, it makes sense that this notoriously difficult champion should
+              rise to the top of professional play. The Emperor of the Sands' popularity most likely stems from the fact that he is a good 
+              counter for both Syndra and Orianna, the other most popular mid lane champs of the season.</p>
+           <h3>Syndra – 25 picks</h3>
+           <p>Syndra's popularity dropped slightly in 2021, but that didn't stop her from stunning entire teams and massive burst</p>
+        </div>
       </div>
 
       
       <div class="champion">
-        <p>Bot Lane</p>
-        <h3>Kai'Sa – 71 picks</h3>
-        <picture>
-          <img src="./images/kai sa.png" alt="League-of-legends-champion 'Kai'Sa'">
-        </picture>
-        <p>The Daughter of the Void had a bumper season, emerging as easily the most popular bot lane choice of Spring. Easy to dish out 
-          alot of damage in a short time.</p>
-        <h3>Xayah – 37 picks</h3>
-        <p>This rebel marksman was another popular choice in Spring, but fell short of the top spot, possibly because her bread-and-butter 
-          combo is a little harder to hit than some other champions.</p>
-        <h3>Jhin – 23 picks</h3>
-        <p>The LEC's pros third bot lane pick was none other than the virtuoso, Jhin. With long range and crowd-control in his kit, it makes Jhin a solid pick.</p>
+        <div class="champion-profile">
+           <p>Bot Lane</p>
+           <h3>Kai'Sa – 71 picks</h3>
+           <picture>
+             <img src="./images/kai sa.png" alt="League-of-legends-champion 'Kai'Sa'">
+           </picture>
+           <p>The Daughter of the Void had a bumper season, emerging as easily the most popular bot lane choice of Spring. Easy to dish out 
+             alot of damage in a short time.</p>
+        </div>
+        <div class="runners-up">
+           <h3>Xayah – 37 picks</h3>
+           <p>This rebel marksman was another popular choice in Spring, but fell short of the top spot, possibly because her bread-and-butter 
+             combo is a little harder to hit than some other champions.</p>
+           <h3>Jhin – 23 picks</h3>
+           <p>The LEC's pros third bot lane pick was none other than the virtuoso, Jhin. With long range and crowd-control in his kit, it makes Jhin a solid pick.</p>
+        </div>
       </div>
 
 
       <div class="champion">
-        <p>Support</p>
-        <h3>Rell – 54 picks</h3>
-        <picture>
-          <img src="./images/Rell.jpg" alt="League-of-legends-champion 'Rell'">
-        </picture>
-        <p>The Iron Maiden was the top choice in the LEC due to her tanky abilities which allow her to build up strong resistances.</p>
-        <h3>Alistar – 52 picks</h3>
-        <p>This fearsome minotaur has been a popular meta pick for a while now, and his ability to support bot lane champs like Jhin and Xayah made him a top 
-          choice for support players this Spring Season.</p>
-        <h3>Leona – 26 picks</h3>
-        <p>Last but certainly not least, we have the Radiant Dawn, Leona. Can lock down the opposition for a long time, giving her team plenty of time to kill the carries.</p>
+        <div class="champion-profile">
+           <p>Support</p>
+           <h3>Rell – 54 picks</h3>
+           <picture>
+             <img src="./images/Rell.jpg" alt="League-of-legends-champion 'Rell'">
+           </picture>
+           <p>The Iron Maiden was the top choice in the LEC due to her tanky abilities which allow her to build up strong resistances.</p>
+        </div>
+        <div class="runners-up">
+           <h3>Alistar – 52 picks</h3>
+           <p>This fearsome minotaur has been a popular meta pick for a while now, and his ability to support bot lane champs like Jhin and Xayah made him a top 
+             choice for support players this Spring Season.</p>
+           <h3>Leona – 26 picks</h3>
+           <p>Last but certainly not least, we have the Radiant Dawn, Leona. Can lock down the opposition for a long time, giving her team plenty of time to kill the carries.</p>
+        </div>
       </div>
 
     </div>

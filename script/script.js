@@ -15,32 +15,27 @@ async function getLeagueData() {
     console.log(league);
     const team1 = league.data.schedule.events[79].match.teams[0].name;
     const team2 = league.data.schedule.events[79].match.teams[1].name;
+    const lastMatch = league.data.schedule.events.pop();
 
+    console.log({lastMatch})
     console.log(team2)
     console.log(team1)
+
+    renderMatch(team1, team2);
  }
     
-    
 
-    // function renderMatch() {
-      
-    //   const team1Name = document.querySelector('.team-1');
+function renderMatch(team1, team2) {
+  const clone = template.content.cloneNode(true);
 
-    //   team1Name.append(team1)
+  const team1Name = clone.querySelector('.team-1');
+  team1Name.innerText = team1;
 
-    // }
+  const team2Name = clone.querySelector('.team-2');
+  team2Name.innerText = team2;
 
-    // renderMatch()
-  
-  // function renderMatch(league) {
-  //   const clone = template.content.cloneNode(true);
-
-  //   const team1Name = clone.querySelector('.team-1');
-  //   team1Name.innerText = team1.name;
-
-  //   leagueWrapper.append(clone);
-  // }
-
+  leagueWrapper.appendChild(clone);
+}
 
 
 
@@ -106,19 +101,3 @@ const navSlide = () => {
 }
 
 navSlide();
-
-// moveLink
-
-const signUp = document.querySelector('.sign-up');
-const mediaQuery = window.matchMedia('(max-width: 751px)');
-const nav =document.querySelector('.nav-links');
-
-function moveLink () {
-  if (mediaQuery.matches) {
-     nav.appendChild(signUp);
-  };
-}
-
-
-mediaQuery.addListener(moveLink);
-moveLink(mediaQuery);
