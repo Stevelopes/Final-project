@@ -219,6 +219,40 @@ header img {
   transform: scale(1.1);
 }
 
+/* Champion picks */
+
+.champion-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--yellow);
+  -webkit-text-stroke: 0.5px white;
+}
+
+.champion-info h2 {
+  font-size: 3rem;
+  margin: 75px;
+}
+
+.champion-info p {
+  font-size: 1.5rem;
+  margin: 50px;
+}
+
+.champion h3 {
+  font-size: 2rem;
+}
+
+.champion {
+  border: var(--border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 2000px;
+}
+
 
 
 /* Info */
@@ -236,7 +270,7 @@ header img {
   flex-direction: column;
   min-height: 30vh;
   text-align: center;
-  border: var(--border);
+  border-bottom: var(--border);
   padding: 0px 100px;
 }
 
@@ -687,8 +721,22 @@ footer a {
       margin: 0 auto;
     }
 
+    .champion-info h2 {
+      font-size: 1.7rem;
+      margin: 25px;
+    }
+    
+    .champion-info p {
+      font-size: 1rem;
+      margin: 25px;
+    }
+    
+    .champion h3 {
+      font-size: 1.7rem;
+    }
+
     .info h2 {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
 
     .info li {
