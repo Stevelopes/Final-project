@@ -722,17 +722,26 @@ footer a {
     }
 
     .champion-info h2 {
-      font-size: 1.7rem;
+      font-size: 1.5rem;
       margin: 25px;
     }
     
     .champion-info p {
-      font-size: 1rem;
+      font-size: 0.9rem;
       margin: 25px;
     }
     
     .champion h3 {
-      font-size: 1.7rem;
+      font-size: 1.5rem;
+      margin: 10px;
+    }
+
+    .champion p {
+      margin: 10px;
+    }
+
+    .champion img {
+      max-height: 250px;
     }
 
     .info h2 {
