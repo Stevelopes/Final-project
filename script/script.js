@@ -16,23 +16,46 @@ async function getLeagueData() {
     const team1 = league.data.schedule.events[79].match.teams[0].name;
     const team2 = league.data.schedule.events[79].match.teams[1].name;
     const lastMatch = league.data.schedule.events.pop();
+    const team1Logo = lastMatch.match.teams[0].image;
+    const team2Logo = lastMatch.match.teams[1].image;
+    const team1score = lastMatch.match.teams[0].result.gameWins;
+    const team2score = lastMatch.match.teams[1].result.gameWins;
 
     console.log({lastMatch})
     console.log(team2)
     console.log(team1)
+    console.log(team1Logo)
+    console.log(team2Logo)
+    console.log(team1score)
+    console.log(team2score)
 
-    renderMatch(team1, team2);
+    renderMatch(team1, team2, team2Logo, team1Logo, team1score, team2score);
+    
  }
     
 
-function renderMatch(team1, team2) {
+function renderMatch(team1, team2, team2Logo, team1Logo, team1score, team2score) {
   const clone = template.content.cloneNode(true);
 
   const team1Name = clone.querySelector('.team-1');
   team1Name.innerText = team1;
+  
+  const img = clone.querySelector('.team-logo-1');
+  img.setAttribute('src', team1Logo);
+  img.setAttribute('alt', `The logo of ${team1Name}`);  
+
+  const score1 = clone.querySelector('.score-1');
+  score1.innerText = team1score;
 
   const team2Name = clone.querySelector('.team-2');
   team2Name.innerText = team2;
+
+  const img2 = clone.querySelector('.team-logo-2');
+  img2.setAttribute('src', team2Logo);
+  img2.setAttribute('alt', `The logo of ${team2Name}`);
+
+  const score2 = clone.querySelector('.score-2');
+  score2.innerText = team2score;
 
   leagueWrapper.appendChild(clone);
 }

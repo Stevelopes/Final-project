@@ -172,9 +172,52 @@ header img {
   background-color: var(--bg-color);
   border: var(--border);
   transition: 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  color: var(--yellow);
+  -webkit-text-stroke: 0.5px white;
+  align-items: center;
 }
 
-.flex-item-1:hover {
+.fixture a {
+  text-decoration: none;
+  color: var(--yellow);
+  padding-left: 15px;
+}
+
+.fixture a:hover {
+  color: red;
+}
+
+.fixture h2 {
+  padding-left: 15px;
+}
+
+.fixture-teams {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.fixture-teams p {
+  font-size: 1.5rem;
+  align-items: center;
+}
+
+.teams {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 115px;
+  text-align: center;
+}
+
+.teams img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.fixture:hover {
   transform: scale(1.1);
 }
 
@@ -679,7 +722,7 @@ footer a {
       flex-direction: column;
     }
 
-    .flex-item-1, .youtube-video, .flex-item-3 {
+    .fixture, .youtube-video, .flex-item-3 {
       width: 100%;
       max-height: 30vh;
     }
