@@ -162,6 +162,8 @@ header img {
 /* Main */
 
 
+/* Fixture */
+
 .flex-container {
   display: flex;
 }
@@ -221,6 +223,9 @@ header img {
   transform: scale(1.1);
 }
 
+
+/* Youtube link */
+
 .youtube-video {
   height: 30vh;
   width: 35vw;
@@ -249,6 +254,8 @@ header img {
   border: var(--border);
 }
 
+/* community link */
+
 .flex-item-3 h2 {
   color: var(--yellow);
   -webkit-text-stroke: 0.5px rgb(0, 0, 0);
@@ -273,6 +280,8 @@ header img {
 .community-link:hover {
   transform: scale(1.1);
 }
+
+
 
 /* Champion picks */
 
@@ -336,6 +345,42 @@ header img {
 .champion img {
     max-height: 400px;
   }
+
+
+  /* Footer */
+
+
+
+footer {
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: var(--border);
+  text-align: center;
+}
+
+footer img {
+  max-height: 100px;
+  margin-top: 20px;
+}
+
+footer p {
+  color: silver;
+  margin-bottom: 10px;
+}
+
+footer a {
+  margin-bottom: 10px;
+  color: white;
+}
+
+
+
+
+/* How to play page */
+
+
 
 /* Info */
 
@@ -504,37 +549,8 @@ dt.accordion-open span:last-of-type {
 }
 
 
-/* Footer */
-
-
-
-footer {
-  background-color: var(--bg-color);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-top: var(--border);
-  text-align: center;
-}
-
-footer img {
-  max-height: 100px;
-  margin-top: 20px;
-}
-
-footer p {
-  color: silver;
-  margin-bottom: 10px;
-}
-
-footer a {
-  margin-bottom: 10px;
-  color: white;
-}
-
-
-
 /* Form */
+
 
 .form div {
    display: flex;
@@ -609,7 +625,7 @@ footer a {
 }
 
 
-/* Community */
+/* Community page */
 
 
 .community {
@@ -653,6 +669,11 @@ footer a {
     padding-bottom: 10px;
   }
 
+
+/* media 1290 */
+
+
+
   @media only screen and (max-width: 1290px) {
 
     header img {
@@ -675,6 +696,9 @@ footer a {
     }
      
   }
+
+/* media 1100 */
+
 
   @media only screen and (max-width: 1100px) {
 
@@ -752,6 +776,11 @@ footer a {
       margin-top: 20px;
     }
   }
+
+
+/* media 850 */
+
+
 
   @media only screen and (max-width: 850px) {
 
