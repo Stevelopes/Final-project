@@ -797,16 +797,17 @@ dt.accordion-open span:last-of-type {
       position: absolute;
       z-index: 5;
       right: 0px;
-      height: fit-content;
+      height: 300px;
       top: 10vh;
       background-color: rgb(31, 31, 31, .95);
-      border-radius: 5px;
+      border-radius: ;
       display: flex;
       align-items: center;
       width: 30%;
       transform: translateX(100%);
       transition: transform 0.5s ease-in;
       flex-direction: column;
+      padding-bottom: 50px;
     }
 
     .nav-links {
