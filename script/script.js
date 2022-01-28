@@ -13,15 +13,17 @@ async function getLeagueData() {
     });
     const league = await response.json();
     console.log(league);
-    const team1 = league.data.schedule.events[79].match.teams[0].name;
-    const team2 = league.data.schedule.events[79].match.teams[1].name;
     const lastMatch = league.data.schedule.events.pop();
+    const last = lastMatch.state;
+    const team1 = lastMatch.match.teams[0].name;
+    const team2 = lastMatch.match.teams[1].name;
     const team1Logo = lastMatch.match.teams[0].image;
     const team2Logo = lastMatch.match.teams[1].image;
     const team1score = lastMatch.match.teams[0].result.gameWins;
     const team2score = lastMatch.match.teams[1].result.gameWins;
 
     console.log({lastMatch})
+    console.log(last)
     console.log(team2)
     console.log(team1)
     console.log(team1Logo)
