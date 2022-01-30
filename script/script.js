@@ -13,7 +13,9 @@ async function getLeagueData() {
     });
     const league = await response.json();
     console.log(league);
-    const lastMatch = league.data.schedule.events.pop();
+    const completed = league.data.schedule.events.filter(({ state }) => state === "completed")
+    const lastMatch = completed.pop();
+    console.log(completed);
     const last = lastMatch.state;
     const team1 = lastMatch.match.teams[0].name;
     const team2 = lastMatch.match.teams[1].name;
